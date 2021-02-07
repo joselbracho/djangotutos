@@ -27,3 +27,13 @@ snippet.save()
 ```
 @csrf_exempt
 ```
+- El arhivo urls.py de cada aplicación se crea manualmente y se enlaza a ulrs.py del proyecto
+- la libreria httpie permite hacer consultas tipo CURL con sintaxis:
+`http http://127.0.0.1:8000/snippets/`
+
+## Requests & Responses
+
+- Extienden de `HttpRequest`
+- `request.POST` solo maneja form data (en el proyecto todo se esta enviando por body form data cuando es POST)
+- `Response` como segundo parametro puede retornar las respuestas 201,404,... status=status.HTTP_201_CREATED
+- El decorador en las vistas `@api_view` posee los métodos de la petición `@api_view(['GET', 'POST'])`
