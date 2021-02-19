@@ -25,7 +25,7 @@ SECRET_KEY = 'h6pe)49_h_a911m67w=g0=jk!(ke!g$^d8hs0ib81e(qoo(7ka'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shapya.test']
 
 
 # Application definition
